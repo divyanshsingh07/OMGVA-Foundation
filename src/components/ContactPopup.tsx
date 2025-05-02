@@ -47,11 +47,10 @@ const ContactPopup = ({ isOpen, onClose }: ContactPopupProps) => {
             <div>
               <p className="text-gray-600 dark:text-gray-300">Email</p>
               <a
-                href="mailto:dummy@gmail.com"
+                href="mailto:omgvayoga@gmail.com"
                 className="text-saffron hover:text-saffron/80 transition-colors"
               >
-                dummy@gmail.com
-              </a>
+omgvayoga@gmail.com              </a>
             </div>
           </div>
 

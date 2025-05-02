@@ -26,19 +26,30 @@ const DonationPopup = ({ isOpen, onClose }: DonationPopupProps) => {
             Your generous contribution helps us spread the light of yoga and meditation to more seekers.
           </p>
 
-          <div className="flex justify-center">
+          <div className="flex flex-col items-center gap-2">
             <img
               src={QRCode}
               alt="Scan to Donate"
               className="w-48 h-48 object-contain rounded-lg shadow-lg"
             />
+            <div className="mt-2 flex flex-col items-center">
+              <span className="text-gray-700 dark:text-gray-200 font-medium select-all text-sm">UPI ID: omgvayoga-1@oksbi</span>
+              <button
+                className="mt-1 px-2 py-1 text-xs bg-saffron text-white rounded hover:bg-saffron/90 transition-colors"
+                onClick={() => {
+                  navigator.clipboard.writeText('omgvayoga-1@oksbi');
+                }}
+              >
+                Copy
+              </button>
+            </div>
           </div>
 
           <p className="text-gray-600 dark:text-gray-300 text-center italic">
             "The best way to find yourself is to lose yourself in the service of others."<br />
             - Mahatma Gandhi
           </p>
-          <p>this is dummy QR-by Developer</p>
+          
 
           <div className="absolute -bottom-4 -right-4 bg-saffron/20 w-24 h-24 rounded-full" />
         </div>
