@@ -16,7 +16,7 @@ function App() {
           <About />
           <Footer />
           <ThemeToggle />
-        </div>
+    </div>
       </ThemeProvider>
     </Router>
   );
