@@ -11,9 +11,9 @@ const ThemeToggle = () => {
       aria-label="Toggle theme"
     >
       {theme === "light" ? (
-        <Moon className="w-4 h-4 text-gray-800 dark:text-gray-200" />
+        <Moon className="w-3 h-3 text-gray-800 dark:text-gray-200" />
       ) : (
-        <Sun className="w-4 h-4 text-gray-800 dark:text-gray-200" />
+        <Sun className="w-3 h-3 text-gray-800 dark:text-gray-200" />
       )}
     </button>
   );
