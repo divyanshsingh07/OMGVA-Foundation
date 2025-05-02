@@ -10,7 +10,7 @@ const ContactPopup = ({ isOpen, onClose }: ContactPopupProps) => {
 
   return (
     <div className="fixed inset-0 bg-black/50 flex items-center justify-center z-50">
-      <div className="bg-gradient-to-br from-white to-transparent dark:from-gray-800 dark:to-gray-600 rounded-lg p-8 max-w-md w-full mx-4 relative">
+      <div className="bg-white dark:bg-gradient-to-br dark:from-gray-800 dark:to-gray-600 rounded-lg p-8 max-w-md w-full mx-4 relative">
         <button
           onClick={onClose}
           className="absolute top-4 right-4 text-gray-500 hover:text-gray-700 dark:text-gray-400 dark:hover:text-gray-200"
