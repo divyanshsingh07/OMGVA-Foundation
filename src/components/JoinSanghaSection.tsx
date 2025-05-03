@@ -32,7 +32,7 @@ const JoinSanghaSection = () => {
       form,
       'fJzYdjwnokl-VYjk4' // Replace with your EmailJS user ID
     )
-    .then((result) => {
+    .then(() => { // Removed unused 'result' parameter
       alert('Application submitted successfully!');
       form.reset();
     })
