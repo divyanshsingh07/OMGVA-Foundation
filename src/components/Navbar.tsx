@@ -13,11 +13,11 @@ const Navbar = () => {
   const navigate = useNavigate();
 
   const navItems = [
-    { name: "Home", path: "/", icon: Home },
-    { name: "About Us", path: "#about", icon: Users },
-    { name: "Events", path: "/events", icon: Calendar },
-    { name: "Media", path: "/media", icon: Video },
-    { name: "Join Us", path: "/join", icon: LogIn },
+    { name: "Ashram", path: "/", icon: Home },
+    { name: "Our Guru", path: "#about", icon: Users },
+    { name: "Satsang", path: "/events", icon: Calendar },
+    { name: "Gallery", path: "/media", icon: Video },
+    { name: "Join Sangha", path: "/join", icon: LogIn },
   ];
 
   const teachingsItems = [
