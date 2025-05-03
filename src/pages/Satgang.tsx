@@ -1,4 +1,4 @@
-import React, { useEffect, useRef, useState } from "react";
+import { useEffect, useRef, useState } from "react";
 import { FaOm, FaRegDotCircle } from "react-icons/fa";
 import { GiLotus } from "react-icons/gi";
 
@@ -99,7 +99,6 @@ const Satgang = () => {
               <div className="flex flex-col items-center justify-center h-full min-h-[120px]">
                 <span className="text-3xl text-saffron mb-2"><GiLotus /></span>
                 <span className="text-xl font-serif text-saffron text-center mb-2">{updesh[current].quote}</span>
-                <span className="text-gray-600 text-sm italic mb-1">{updesh[current].lang}</span>
                 <span className="text-gray-700 text-base text-center">{updesh[current].text}</span>
               </div>
               {/* Dots navigation */}

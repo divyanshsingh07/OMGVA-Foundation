@@ -1,5 +1,3 @@
-import React from "react";
-
 const pages = [
   {
     title: "The Mystic",
@@ -37,7 +35,7 @@ const MobilePagesSlider = () => {
   return (
     <div className="md:hidden w-full min-h-screen bg-saffron/10 flex items-center justify-center">
       <div className="flex flex-row overflow-x-auto snap-x snap-mandatory w-full gap-6 px-4 py-12">
-        {pages.map((page, idx) => (
+        {pages.map((page) => (
           <div
             key={page.title}
             className="min-w-[90vw] max-w-[90vw] bg-white/80 dark:bg-gray-900/70 rounded-2xl shadow-xl flex flex-col items-center snap-center relative"
