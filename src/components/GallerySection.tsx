@@ -1,6 +1,5 @@
 import { useState } from "react";
 import { FaImage, FaVideo, FaQuoteLeft } from "react-icons/fa";
-import { GiLotus } from "react-icons/gi";
 
 const galleryItems = [
   {
@@ -135,4 +134,4 @@ const GallerySection = () => {
   );
 };
 
-export default GallerySection; 
+export default GallerySection;

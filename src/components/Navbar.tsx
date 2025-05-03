@@ -1,5 +1,5 @@
 import { useState } from "react";
-import { Menu, X, Home, Users, Calendar, BookOpen, Video, LogIn, Heart, Phone } from "lucide-react";
+import { Menu, X, Home, Users, BookOpen, Video, LogIn, Heart, Phone } from "lucide-react";
 import { Link, useNavigate } from "react-router-dom";
 import OMGVALogo from "../assets/OMGVA.png";
 import DonationPopup from "./DonationPopup";
@@ -47,13 +47,6 @@ const Navbar = () => {
     }
   };
 
-  const scrollToSection = (sectionId: string) => {
-    const element = document.getElementById(sectionId);
-    if (element) {
-      element.scrollIntoView({ behavior: 'smooth' });
-    }
-  };
-
   return (
     <>
       <nav className="fixed w-full bg-white/90 backdrop-blur-sm z-50 shadow-sm">
@@ -70,7 +63,7 @@ const Navbar = () => {
             </div>
 
             {/* Desktop Navigation */}
-            <div className="hidden md:block">
+            <div className="hidden md:flex">
               <div className="ml-10 flex items-center space-x-4">
                 {navItems.map((item) => {
                   const Icon = item.icon;
@@ -103,7 +96,7 @@ const Navbar = () => {
                             <Link
                               key={item.name}
                               to={item.path}
-                              className="block px-4 py-2 text-sm text-gray-700 hover:bg-saffron/10 hover:text-saffron flex items-center gap-2"
+                              className="px-4 py-2 text-sm text-gray-700 hover:bg-saffron/10 hover:text-saffron flex items-center gap-2"
                             >
                               <Icon size={16} />
                               {item.name}
@@ -161,7 +154,7 @@ const Navbar = () => {
                     key={item.name}
                     to={item.path}
                     onClick={(e) => handleScroll(e, item.path)}
-                    className="block px-3 py-2 rounded-md text-base font-medium text-gray-700 hover:text-saffron hover:bg-saffron/10 flex items-center gap-2"
+                    className="px-3 py-2 rounded-md text-base font-medium text-gray-700 hover:text-saffron hover:bg-saffron/10 flex items-center gap-2"
                   >
                     <Icon size={20} />
                     {item.name}
@@ -184,7 +177,7 @@ const Navbar = () => {
                         <Link
                           key={item.name}
                           to={item.path}
-                          className="block px-3 py-2 rounded-md text-sm font-medium text-gray-700 hover:text-saffron hover:bg-saffron/10 flex items-center gap-2"
+                          className="px-3 py-2 rounded-md text-sm font-medium text-gray-700 hover:text-saffron hover:bg-saffron/10 flex items-center gap-2"
                         >
                           <Icon size={18} />
                           {item.name}
@@ -215,4 +208,4 @@ const Navbar = () => {
   );
 };
 
-export default Navbar; 
+export default Navbar;
