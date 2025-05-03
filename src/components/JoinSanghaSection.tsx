@@ -1,5 +1,6 @@
 import { FaUserFriends, FaHandshake } from "react-icons/fa";
 import { GiLotus, GiMeditation } from "react-icons/gi";
+import emailjs from 'emailjs-com';
 
 const benefits = [
   {
@@ -20,6 +21,27 @@ const benefits = [
 ];
 
 const JoinSanghaSection = () => {
+  const handleSubmit = (e: React.FormEvent<HTMLFormElement>) => {
+    e.preventDefault();
+
+    const form = e.target as HTMLFormElement;
+
+    emailjs.sendForm(
+      'service_dxm52xa', // Replace with your EmailJS service ID
+      'template_613vfqm', // Replace with your EmailJS template ID
+      form,
+      'fJzYdjwnokl-VYjk4' // Replace with your EmailJS user ID
+    )
+    .then((result) => {
+      alert('Application submitted successfully!');
+      form.reset();
+    })
+    .catch((error) => {
+      alert('An error occurred. Please try again later.');
+      console.error(error);
+    });
+  };
+
   return (
     <section 
       id="join" 
@@ -59,23 +81,29 @@ const JoinSanghaSection = () => {
         {/* Membership Form */}
         <div className="bg-white/80 dark:bg-gray-100/80 rounded-xl shadow p-8 mb-12">
           <h2 className="text-2xl font-serif text-saffron text-center mb-6">Become a Member</h2>
-          <form className="space-y-4">
+          <form className="space-y-4" onSubmit={handleSubmit}>
             <div className="grid md:grid-cols-2 gap-4">
               <input
                 type="text"
+                name="fullName"
                 placeholder="Full Name"
                 className="w-full px-4 py-2 rounded-lg border border-gray-300 focus:border-saffron focus:ring-1 focus:ring-saffron"
+                required
               />
               <input
                 type="email"
+                name="email"
                 placeholder="Email Address"
                 className="w-full px-4 py-2 rounded-lg border border-gray-300 focus:border-saffron focus:ring-1 focus:ring-saffron"
+                required
               />
             </div>
             <textarea
+              name="message"
               placeholder="Why do you want to join our sangha?"
               rows={4}
               className="w-full px-4 py-2 rounded-lg border border-gray-300 focus:border-saffron focus:ring-1 focus:ring-saffron"
+              required
             />
             <button
               type="submit"
@@ -107,4 +135,4 @@ const JoinSanghaSection = () => {
   );
 };
 
-export default JoinSanghaSection; 
+export default JoinSanghaSection;
