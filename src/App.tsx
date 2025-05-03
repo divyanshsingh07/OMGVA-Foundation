@@ -8,6 +8,7 @@ import ThemeToggle from "./components/ThemeToggle";
 import Man from "./pages/Man";
 import Mystic from "./pages/Mystic";
 import Mission from "./pages/Mission";
+import Satgang from "./pages/Satgang";
 
 function App() {
   return (
@@ -23,12 +24,14 @@ function App() {
                 <>
                   <Hero />
                   <About />
+                  <Satgang />
                   <Footer />
                 </>
               } />
               <Route path="/man" element={<Man />} />
               <Route path="/mystic" element={<Mystic />} />
               <Route path="/mission" element={<Mission />} />
+              <Route path="/satgang" element={<Satgang />} />
             </Routes>
           </div>
           <ThemeToggle />

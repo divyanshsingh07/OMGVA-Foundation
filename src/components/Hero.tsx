@@ -1,6 +1,7 @@
 import { Link } from "react-router-dom";
 import borderLight from '../assets/border-light.png';
 import borderDark from '../assets/border-dark.png';
+import MobilePagesSlider from './components/MobilePagesSlider';
 
 const heroCards = [
   {
