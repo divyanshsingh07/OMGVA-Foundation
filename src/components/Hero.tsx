@@ -1,6 +1,4 @@
 import { Link } from "react-router-dom";
-import { Facebook, Youtube, Instagram } from "lucide-react";
-import GuruImage from "../assets/guru.png";
 import borderLight from '../assets/border-light.png';
 import borderDark from '../assets/border-dark.png';
 
