@@ -110,6 +110,7 @@ const Hero = () => {
         <div className="w-2 h-2 rounded-full bg-white/30" />
       </div>
 
+    
       {/* Decorative border at the bottom */}
       <div className="absolute left-0 right-0 bottom-16 w-full z-20 pointer-events-none flex justify-center">
         <img
@@ -120,11 +121,11 @@ const Hero = () => {
         <img
           src={borderDark}
           alt="decorative border dark"
-          className="w-full max-w-xs sm:max-w-md md:max-w-xl h-auto mx-auto block hidden dark:block"
+          className="w-full max-w-xs sm:max-w-md md:max-w-xl h-auto mx-auto hidden dark:block"
         />
       </div>
     </div>
   );
 };
 
-export default Hero; 
+export default Hero;
