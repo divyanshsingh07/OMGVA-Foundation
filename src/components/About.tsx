@@ -2,7 +2,15 @@ import ImageSlider from "./ImageSlider";
 
 const About = () => {
   return (
-    <section id="about" className="py-16 bg-gray-50 dark:bg-gray-800 pt-32">
+    <section id="about" className="py-16 bg-gray-50 dark:bg-gray-800 pt-32 relative overflow-hidden">
+      {/* Background decorations */}
+      <div className="absolute inset-0 pointer-events-none z-0">
+        <div className="absolute top-1/4 left-0 w-40 h-40 bg-saffron/20 rounded-full blur-3xl"></div>
+        <div className="absolute bottom-1/4 right-0 w-40 h-40 bg-saffron/20 rounded-full blur-3xl"></div>
+        <div className="absolute top-1/2 left-4 text-[100px] text-saffron/30">卐</div>
+        <div className="absolute bottom-1/2 right-4 text-[100px] text-saffron/30">卐</div>
+      </div>
+      {/* Existing content */}
       <div className="max-w-7xl mx-auto px-4 sm:px-6 lg:px-8">
         <div className="text-center mb-12">
           <h2 className="text-3xl font-serif text-saffron mb-4">About OMGVA Foundation</h2>
@@ -37,4 +45,4 @@ const About = () => {
   );
 };
 
-export default About; 
+export default About;

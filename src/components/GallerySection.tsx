@@ -43,13 +43,12 @@ const GallerySection = () => {
       className="min-h-screen bg-gradient-to-br from-white to-saffron/10 relative overflow-x-hidden py-16 md:py-24"
       style={{ scrollMarginTop: "4rem" }}
     >
-      {/* Mandala background */}
-      <div className="absolute inset-0 pointer-events-none z-0 flex justify-center items-center">
-        <img
-          src="/mandala-bg.png"
-          alt="mandala background"
-          className="w-[80vw] max-w-2xl opacity-10 mx-auto"
-        />
+      {/* Background decorations */}
+      <div className="absolute inset-0 pointer-events-none z-0">
+        <div className="absolute top-1/4 left-0 w-40 h-40 bg-saffron/20 rounded-full blur-3xl"></div>
+        <div className="absolute bottom-1/4 right-0 w-40 h-40 bg-saffron/20 rounded-full blur-3xl"></div>
+        <div className="absolute top-1/2 left-4 text-[100px] text-saffron/30">卐</div>
+        <div className="absolute bottom-1/2 right-4 text-[100px] text-saffron/30">卐</div>
       </div>
 
       <div className="relative z-10 max-w-6xl mx-auto px-4">

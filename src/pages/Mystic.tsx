@@ -4,7 +4,13 @@ import { Link } from "react-router-dom";
 const Mystic = () => {
   return (
     <div className="min-h-screen bg-gradient-to-br from-white to-saffron/10 dark:from-gray-900 dark:to-saffron/5">
-      <div className="max-w-7xl mx-auto px-4 sm:px-6 lg:px-8 py-16">
+      <div className="absolute inset-0 pointer-events-none z-0">
+        <div className="absolute top-1/4 left-0 w-40 h-40 bg-saffron/20 rounded-full blur-3xl"></div>
+        <div className="absolute bottom-1/4 right-0 w-40 h-40 bg-saffron/20 rounded-full blur-3xl"></div>
+        <div className="absolute top-1/2 left-4 text-[100px] text-saffron/30">卐</div>
+        <div className="absolute bottom-1/2 right-4 text-[100px] text-saffron/30">卐</div>
+      </div>
+      <div className="max-w-7xl mx-auto px-4 sm:px-6 lg:px-8 py-16 relative z-10">
         <Link
           to="/"
           className="inline-flex items-center gap-2 text-saffron hover:text-saffron/80 transition-colors mb-8"
@@ -40,4 +46,4 @@ const Mystic = () => {
   );
 };
 
-export default Mystic; 
+export default Mystic;
