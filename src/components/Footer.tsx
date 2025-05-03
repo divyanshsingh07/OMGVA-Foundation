@@ -7,7 +7,7 @@ const Footer = () => {
         <div className="grid grid-cols-1 md:grid-cols-4 gap-8">
           {/* About */}
           <div className="md:col-span-1">
-            <h3 className="text-xl font-serif text-saffron mb-4">OMGVA Yoga</h3>
+            <h3 className="text-xl font-serif text-saffron mb-4">OMGVA Foundation</h3>
             <p className="text-gray-400">
               Spreading the light of yoga and meditation under the divine guidance of His Holiness Akinchan Shree Mitra Shree Ji.
             </p>
@@ -94,7 +94,7 @@ const Footer = () => {
 
         {/* Copyright */}
         <div className="border-t border-gray-800 mt-12 pt-8 text-center text-gray-400">
-          <p>&copy; {new Date().getFullYear()} OMGVA Yoga Foundation. All rights reserved.</p>
+          <p>&copy; {new Date().getFullYear()} OMGVA Foundation. All rights reserved.</p>
         </div>
       </div>
     </footer>

@@ -9,6 +9,9 @@ import Man from "./pages/Man";
 import Mystic from "./pages/Mystic";
 import Mission from "./pages/Mission";
 import Satgang from "./pages/Satgang";
+import SatsangSection from "./components/SatsangSection";
+import JoinSanghaSection from "./components/JoinSanghaSection";
+import GallerySection from "./components/GallerySection";
 
 function App() {
   return (
@@ -24,7 +27,9 @@ function App() {
                 <>
                   <Hero />
                   <About />
-                  <Satgang />
+                  <SatsangSection />
+                  <JoinSanghaSection />
+                  <GallerySection />
                   <Footer />
                 </>
               } />

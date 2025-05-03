@@ -4,6 +4,7 @@ import { Link, useNavigate } from "react-router-dom";
 import OMGVALogo from "../assets/OMGVA.png";
 import DonationPopup from "./DonationPopup";
 import ContactPopup from "./ContactPopup";
+import { FaOm } from "react-icons/fa";
 
 const Navbar = () => {
   const [isOpen, setIsOpen] = useState(false);
@@ -15,9 +16,9 @@ const Navbar = () => {
   const navItems = [
     { name: "Ashram", path: "/", icon: Home },
     { name: "Our Guru", path: "#about", icon: Users },
-    { name: "Satsang", path: "/events", icon: Calendar },
-    { name: "Gallery", path: "/media", icon: Video },
-    { name: "Join Sangha", path: "/join", icon: LogIn },
+    { name: "Satsang", path: "#satsang", icon: FaOm },
+    { name: "Join Sangha", path: "#join", icon: LogIn },
+    { name: "Gallery", path: "#gallery", icon: Video },
   ];
 
   const teachingsItems = [
@@ -27,18 +28,29 @@ const Navbar = () => {
   ];
 
   const handleScroll = (e: React.MouseEvent<HTMLAnchorElement>, path: string) => {
-    if (path === "#about") {
-      e.preventDefault();
-      const aboutSection = document.getElementById("about");
-      if (aboutSection) {
-        aboutSection.scrollIntoView({ behavior: "smooth" });
+    e.preventDefault();
+    
+    if (path === "#about" || path === "#satsang" || path === "#join" || path === "#gallery") {
+      const sectionId = path.replace("#", "");
+      const section = document.getElementById(sectionId);
+      if (section) {
+        section.scrollIntoView({ behavior: "smooth", block: "start" });
         setIsOpen(false);
       }
     } else if (path === "/") {
-      e.preventDefault();
       navigate("/");
       window.scrollTo({ top: 0, behavior: "smooth" });
       setIsOpen(false);
+    } else {
+      navigate(path);
+      setIsOpen(false);
+    }
+  };
+
+  const scrollToSection = (sectionId: string) => {
+    const element = document.getElementById(sectionId);
+    if (element) {
+      element.scrollIntoView({ behavior: 'smooth' });
     }
   };
 
