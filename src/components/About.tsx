@@ -20,11 +20,11 @@ const About = () => {
         <div className="grid grid-cols-1 md:grid-cols-2 gap-12 items-center">
           <div className="space-y-6">
           <p className="text-gray-700 dark:text-gray-300 leading-relaxed">
-  OMGVA Foundation ek बहुआयामी संस्था hai jo मानवता ke उत्थान ke liye समर्पित है। Iske teen प्रमुख स्तम्भ hain — <strong>OMGVA Yoga Foundation</strong>, <strong>OMGVA Tourism & Wellness</strong>, aur <strong>OMGVA Infotruss</strong> — jo शरीर, मन aur आत्मा ke समग्र विकास ke लिए कार्यरत हैं।
+  OMGVA Foundation ek बहुआयामी संस्था hai jo मानवता ke उत्थान ke liye समर्पित है। Iske teen प्रमुख स्तम्भ hain — <strong>OMGVA Foundation Foundation</strong>, <strong>OMGVA Tourism & Wellness</strong>, aur <strong>OMGVA Infotruss</strong> — jo शरीर, मन aur आत्मा ke समग्र विकास ke लिए कार्यरत हैं।
 </p>
 
 <p className="text-gray-700 dark:text-gray-300 leading-relaxed">
-  <strong>OMGVA Yoga Foundation</strong> ek आध्यात्मिक आश्रम hai jo योग एवं ध्यान की प्राचीन विद्या ko <em>His Holiness Akinchan Shree Mitra Shree Ji</em> ke दिव्य मार्गदर्शन mein प्रसारित करता है। हमारा उद्देश्य hai — "योगः कर्मसु कौशलम्" — karm mein कौशल aur आत्मिक शांति ka समन्वय।
+  <strong>OMGVA Foundation Foundation</strong> ek आध्यात्मिक आश्रम hai jo योग एवं ध्यान की प्राचीन विद्या ko <em>His Holiness Akinchan Shree Mitra Shree Ji</em> ke दिव्य मार्गदर्शन mein प्रसारित करता है। हमारा उद्देश्य hai — "योगः कर्मसु कौशलम्" — karm mein कौशल aur आत्मिक शांति ka समन्वय।
 </p>
 
 <p className="text-gray-700 dark:text-gray-300 leading-relaxed">

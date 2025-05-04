@@ -81,10 +81,10 @@ const Hero = () => {
             <img
               src={card.image}
               alt={card.title}
-              className="w-full h-full object-cover object-center group-hover:scale-[1.05] transition-transform duration-500"
+              className="w-full h-full object-cover object-center transform transition-transform duration-500 group-hover:scale-105"
             />
             <div className="absolute inset-0 bg-gradient-to-t from-black/70 via-black/40 to-transparent" />
-            <div className="absolute inset-0 flex flex-col justify-end p-8">
+            <div className="absolute inset-0 flex flex-col justify-end p-8 transition-opacity duration-300">
               <div className="text-center space-y-4">
                 <span className="text-3xl md:text-4xl font-serif text-white drop-shadow-lg font-bold">
                   {card.title} <span className="text-4xl">›</span>

@@ -14,7 +14,7 @@ const pages = [
     image: "/mission.png",
     alt: "The Mission",
     content: [
-      "The mission of OMGVA Yoga Foundation is to spread the light of yoga and meditation to every corner of the world. Under the divine guidance of His Holiness Akinchan Shree Mitra Shree Ji, we strive to create a world where spiritual wisdom is accessible to all.",
+      "The mission of OMGVA Foundation is to spread the light of yoga and meditation to every corner of the world. Under the divine guidance of His Holiness Akinchan Shree Mitra Shree Ji, we strive to create a world where spiritual wisdom is accessible to all.",
       "Our vision is to establish a global community of spiritual seekers, united in their pursuit of inner peace and enlightenment. Through various programs, teachings, and initiatives, we aim to transform lives and create a more harmonious world.",
       "Join us in this sacred mission of spreading love, peace, and spiritual wisdom to humanity. Together, we can create a world where every individual realizes their divine potential."
     ]
@@ -65,4 +65,4 @@ const MobilePagesSlider = () => {
   );
 };
 
-export default MobilePagesSlider; 
+export default MobilePagesSlider;

@@ -8,23 +8,16 @@ import { FaOm } from "react-icons/fa";
 
 const Navbar = () => {
   const [isOpen, setIsOpen] = useState(false);
-  const [isTeachingsOpen, setIsTeachingsOpen] = useState(false);
   const [isDonationOpen, setIsDonationOpen] = useState(false);
   const [isContactOpen, setIsContactOpen] = useState(false);
   const navigate = useNavigate();
 
   const navItems = [
     { name: "Ashram", path: "/", icon: Home },
-    { name: "Our Guru", path: "#about", icon: Users },
+    { name: "Our OMGVA", path: "#about", icon: Users },
     { name: "Satsang", path: "#satsang", icon: FaOm },
     { name: "Join Sangha", path: "#join", icon: LogIn },
     { name: "Gallery", path: "#gallery", icon: Video },
-  ];
-
-  const teachingsItems = [
-    { name: "Daily Teachings", path: "/teachings/daily", icon: BookOpen },
-    { name: "Meditation", path: "/teachings/meditation", icon: BookOpen },
-    { name: "Yoga Practices", path: "/teachings/yoga", icon: BookOpen },
   ];
 
   const handleScroll = (e: React.MouseEvent<HTMLAnchorElement>, path: string) => {
@@ -53,10 +46,10 @@ const Navbar = () => {
         <div className="max-w-7xl mx-auto px-4 sm:px-6 lg:px-8">
           <div className="flex items-center justify-between h-16">
             <div className="flex items-center">
-              <Link to="/" className="flex-shrink-0">
+              <Link to="/" onClick={() => navigate('/')} className="flex-shrink-0">
                 <img
                   src={OMGVALogo}
-                  alt="OMGVA Yoga Logo"
+                  alt="OMGVA Foundation Logo"
                   className="h-12 w-auto"
                 />
               </Link>
@@ -79,34 +72,6 @@ const Navbar = () => {
                     </Link>
                   );
                 })}
-                <div className="relative group">
-                  <button
-                    className="text-gray-700 hover:text-saffron px-3 py-2 rounded-md text-sm font-medium transition-colors flex items-center gap-2"
-                    onClick={() => setIsTeachingsOpen(!isTeachingsOpen)}
-                  >
-                    <BookOpen size={18} />
-                    Teachings
-                  </button>
-                  {isTeachingsOpen && (
-                    <div className="absolute left-0 mt-2 w-48 rounded-md shadow-lg bg-white ring-1 ring-black ring-opacity-5">
-                      <div className="py-1">
-                        {teachingsItems.map((item) => {
-                          const Icon = item.icon;
-                          return (
-                            <Link
-                              key={item.name}
-                              to={item.path}
-                              className="px-4 py-2 text-sm text-gray-700 hover:bg-saffron/10 hover:text-saffron flex items-center gap-2"
-                            >
-                              <Icon size={16} />
-                              {item.name}
-                            </Link>
-                          );
-                        })}
-                      </div>
-                    </div>
-                  )}
-                </div>
                 <button
                   onClick={() => setIsContactOpen(true)}
                   className="text-gray-700 hover:text-saffron px-3 py-2 rounded-md text-sm font-medium transition-colors flex items-center gap-2"
@@ -161,32 +126,6 @@ const Navbar = () => {
                   </Link>
                 );
               })}
-              <div className="px-3 py-2">
-                <button
-                  className="text-gray-700 hover:text-saffron text-base font-medium flex items-center gap-2"
-                  onClick={() => setIsTeachingsOpen(!isTeachingsOpen)}
-                >
-                  <BookOpen size={20} />
-                  Teachings
-                </button>
-                {isTeachingsOpen && (
-                  <div className="pl-4 mt-2 space-y-1">
-                    {teachingsItems.map((item) => {
-                      const Icon = item.icon;
-                      return (
-                        <Link
-                          key={item.name}
-                          to={item.path}
-                          className="px-3 py-2 rounded-md text-sm font-medium text-gray-700 hover:text-saffron hover:bg-saffron/10 flex items-center gap-2"
-                        >
-                          <Icon size={18} />
-                          {item.name}
-                        </Link>
-                      );
-                    })}
-                  </div>
-                )}
-              </div>
               <button
                 onClick={() => setIsContactOpen(true)}
                 className="w-full text-left px-3 py-2 rounded-md text-base font-medium text-gray-700 hover:text-saffron hover:bg-saffron/10 flex items-center gap-2"
@@ -198,6 +137,10 @@ const Navbar = () => {
           </div>
         )}
       </nav>
+
+      <div className="text-center mt-4">
+        <p className="text-lg font-semibold text-saffron">"Ek Awsar Jo Jiwan Badal De"</p>
+      </div>
 
       {/* Donation Popup */}
       <DonationPopup isOpen={isDonationOpen} onClose={() => setIsDonationOpen(false)} />

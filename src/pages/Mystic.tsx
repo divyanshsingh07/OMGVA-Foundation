@@ -23,15 +23,25 @@ const Mystic = () => {
           <div className="space-y-6">
             <h1 className="text-4xl font-serif text-saffron">The Mystic</h1>
             <div className="w-24 h-1 bg-saffron"></div>
-            <p className="text-gray-700 dark:text-gray-200 leading-relaxed">
-              As a mystic, His Holiness Akinchan Shree Mitra Shree Ji embodies the ancient wisdom of yoga and meditation. His deep connection with the divine allows him to guide seekers through the mystical dimensions of spiritual practice.
-            </p>
-            <p className="text-gray-700 dark:text-gray-200 leading-relaxed">
-              Through his mystical experiences and profound realizations, he reveals the deeper truths of existence and consciousness. His teachings bridge the gap between the material and spiritual worlds, offering practical wisdom for modern seekers.
-            </p>
-            <p className="text-gray-700 dark:text-gray-200 leading-relaxed">
-              His mystical presence and energy create a sacred space where transformation and awakening become possible for all who seek his guidance.
-            </p>
+            <p>
+    As a <span className="font-semibold text-indigo-600">mystic and spiritual guide</span>, 
+    <span className="text-orange-600 font-semibold">His Holiness Akinchan Shree Mitra Shree Ji</span> 
+    embodies the timeless wisdom of <span className="italic">yoga and meditation</span>. 
+    His profound connection with the divine empowers him to lead seekers into the deeper, mystical dimensions of spiritual practice.
+  </p>
+
+  <p>
+    With the depth of his <span className="text-purple-600 font-medium">mystical experiences</span> 
+    and life-changing realizations, he unveils the subtle truths of <span className="italic">existence and consciousness</span>. 
+    His teachings serve as a luminous bridge between the <span className="font-semibold text-blue-600">material and spiritual realms</span>, 
+    offering <span className="text-green-600 font-medium">practical wisdom for the modern seeker</span>.
+  </p>
+
+  <p>
+    His sacred presence radiates a transformative energy that creates a space of awakening. 
+    For those who seek his guidance, <span className="font-medium text-yellow-700">inner healing, self-discovery, and spiritual elevation</span> 
+    become not just possible—but inevitable.
+  </p>
           </div>
           <div className="relative h-[500px] rounded-xl overflow-hidden shadow-xl bg-white dark:bg-gray-900 flex items-center justify-center">
             <img

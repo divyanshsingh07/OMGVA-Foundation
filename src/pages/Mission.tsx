@@ -24,15 +24,21 @@ const Mission = () => {
             <div className="space-y-6">
               <h1 className="text-4xl font-serif text-saffron">The Mission</h1>
               <div className="w-24 h-1 bg-saffron"></div>
-              <p className="text-gray-700 dark:text-gray-200 leading-relaxed">
-                The mission of OMGVA Yoga Foundation is to spread the light of yoga and meditation to every corner of the world. Under the divine guidance of His Holiness Akinchan Shree Mitra Shree Ji, we strive to create a world where spiritual wisdom is accessible to all.
-              </p>
-              <p className="text-gray-700 dark:text-gray-200 leading-relaxed">
-                Our vision is to establish a global community of spiritual seekers, united in their pursuit of inner peace and enlightenment. Through various programs, teachings, and initiatives, we aim to transform lives and create a more harmonious world.
-              </p>
-              <p className="text-gray-700 dark:text-gray-200 leading-relaxed">
-                Join us in this sacred mission of spreading love, peace, and spiritual wisdom to humanity. Together, we can create a world where every individual realizes their divine potential.
-              </p>
+              <p>
+    <span className="font-semibold text-lg">The mission of OMGVA Foundation</span> is to spread the transformative light of <span className="text-indigo-600 font-medium">yoga and meditation</span> across every corner of the world. Guided by the divine presence of <span className="text-orange-600 font-semibold">His Holiness Akinchan Shree Mitra Shree Ji</span>, also lovingly known as <span className="italic">AKINCHAN</span>, we envision a spiritually awakened planet where ancient wisdom is accessible to all.
+  </p>
+
+  <p>
+    Our vision is to establish a <span className="text-purple-600 font-semibold">global spiritual community</span> — a family of seekers devoted to <span className="italic">inner peace and enlightenment</span>. Through impactful programs, soul-touching teachings, and humanitarian initiatives, we strive to bring meaningful change in individuals and help create a world rooted in harmony and compassion.
+  </p>
+
+  <p>
+    <span className="font-medium">Under MitraShree Ji's leadership</span> — a <span className="text-blue-600">Management Graduate</span>, <span className="text-blue-600">Research Scholar in Applied Psychology</span>, and experienced spiritual mentor — OMGVA empowers people through over <span className="font-semibold">2,000 motivational lectures</span>, <span className="font-semibold">1,500+ career counseling sessions</span>, and <span className="italic">dedicated yoga and meditation practices</span>. He is a guiding force to many across social and corporate landscapes.
+  </p>
+
+  <p>
+    Join us in this sacred mission of <span className="text-green-600 font-semibold">spreading love, peace, and spiritual wisdom</span> to humanity. Together, let's realize the divine within and help others discover theirs — because as our guiding quote says: <span className="italic font-medium text-yellow-600">“उठो धरती के वीर सपुतों - धरती स्वर्ग बनाना है।”</span> (*Rise, brave sons of the Earth – we must turn Earth into Heaven.*)
+  </p>
             </div>
             <div className="relative h-[500px] rounded-2xl overflow-hidden shadow-xl">
               <img
