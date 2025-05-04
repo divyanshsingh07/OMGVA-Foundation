@@ -1,5 +1,5 @@
 import { useState } from "react";
-import { Menu, X, Home, Users, BookOpen, Video, LogIn, Heart, Phone } from "lucide-react";
+import { Menu, X, Home, Users, Video, LogIn, Heart, Phone } from "lucide-react";
 import { Link, useNavigate } from "react-router-dom";
 import OMGVALogo from "../assets/OMGVA.png";
 import DonationPopup from "./DonationPopup";
