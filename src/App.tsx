@@ -12,7 +12,7 @@ import Mission from "./pages/Mission";
 import Satgang from "./pages/Satgang";
 import SatsangSection from "./components/SatsangSection";
 import JoinSanghaSection from "./components/JoinSanghaSection";
-// import GallerySection from "./components/GallerySection";
+import GallerySection from "./components/GallerySection";
 import RegistrationPopup from "./components/RegistrationPopup";
 
 function App() {
@@ -45,7 +45,7 @@ function App() {
                   <About />
                   <SatsangSection />
                   <JoinSanghaSection />
-                  {/* <GallerySection /> */}
+                  <GallerySection />
                   <Footer />
                 </>
               } />
