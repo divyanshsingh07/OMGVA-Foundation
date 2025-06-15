@@ -2,26 +2,8 @@ import { useState } from "react";
 import { FaImage, FaQuoteLeft } from "react-icons/fa";
 
 const galleryItems = [
-  {
-    type: "image",
-    src: "./src/assets/morning.png",
-    caption: "Sunrise Meditation: Embracing the New Day"
-  },
-  {
-    type: "image",
-    src: "./src/assets/guruprunima.png",
-    caption: "Guru Purnima: Honoring the Spiritual Guide"
-  },
-  {
-    type: "image",
-    src: "./src/assets/guru.png",
-    caption: "Blessings from the Guru: Wisdom and Grace"
-  },
-  {
-    type: "image",
-    src: "./src/assets/OMGVA.png",
-    caption: "Community Gathering: United in Devotion"
-  },
+
+
  
   {
     type: "video",
