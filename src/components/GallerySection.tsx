@@ -1,36 +1,41 @@
 import { useState } from "react";
-import { FaImage, FaVideo, FaQuoteLeft } from "react-icons/fa";
+import { FaImage, FaQuoteLeft } from "react-icons/fa";
 
 const galleryItems = [
   {
     type: "image",
-    src: "/gallery1.jpg",
-    caption: "Morning Meditation Session"
+    src: "./src/assets/morning.png",
+    caption: "Sunrise Meditation: Embracing the New Day"
   },
   {
     type: "image",
-    src: "/gallery2.jpg",
-    caption: "Guru Purnima Celebration"
+    src: "./src/assets/guruprunima.png",
+    caption: "Guru Purnima: Honoring the Spiritual Guide"
+  },
+  {
+    type: "image",
+    src: "./src/assets/guru.png",
+    caption: "Blessings from the Guru: Wisdom and Grace"
+  },
+  {
+    type: "image",
+    src: "./src/assets/OMGVA.png",
+    caption: "Community Gathering: United in Devotion"
+  },
+  {
+    type: "image",
+    src: "./src/assets/border-light.png",
+    caption: "Sacred Symbols: Light and Protection"
   },
   {
     type: "video",
-    src: "https://www.youtube.com/embed/example1",
-    caption: "Satsang Highlights"
-  },
-  {
-    type: "image",
-    src: "/gallery3.jpg",
-    caption: "Yoga Practice"
+    src: "https://www.youtube.com/embed/lRZrg_okjjU",
+    caption: "Spiritual Discourse: The Power of Meditation"
   },
   {
     type: "video",
-    src: "https://www.youtube.com/embed/example2",
-    caption: "Spiritual Discourse"
-  },
-  {
-    type: "image",
-    src: "/gallery4.jpg",
-    caption: "Community Gathering"
+    src: "https://www.youtube.com/embed/GGl1AA64fcc",
+    caption: "Divine Teachings: Path to Inner Peace"
   }
 ];
 
@@ -96,12 +101,21 @@ const GallerySection = () => {
             .map((item, idx) => (
               <div key={idx} className="bg-white/80 dark:bg-gray-100/80 rounded-xl shadow overflow-hidden">
                 {item.type === "image" ? (
-                  <div className="aspect-video bg-gray-200 flex items-center justify-center">
-                    <FaImage className="text-4xl text-gray-400" />
+                  <div className="aspect-video bg-gray-200 flex items-center justify-center overflow-hidden">
+                    <img src={item.src} alt={item.caption} className="object-cover w-full h-full" />
                   </div>
                 ) : (
-                  <div className="aspect-video bg-gray-200 flex items-center justify-center">
-                    <FaVideo className="text-4xl text-gray-400" />
+                  <div className="aspect-video bg-gray-200 flex items-center justify-center overflow-hidden">
+                    <iframe
+                      width="100%"
+                      height="100%"
+                      src={item.src}
+                      title={item.caption}
+                      frameBorder="0"
+                      allow="accelerometer; autoplay; clipboard-write; encrypted-media; gyroscope; picture-in-picture"
+                      allowFullScreen
+                      className="w-full h-full"
+                    ></iframe>
                   </div>
                 )}
                 <div className="p-4">
